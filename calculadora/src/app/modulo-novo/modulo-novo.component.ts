@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ServicoNovoService } from './servico-novo.service';
+
 @Component({
   selector: 'app-modulo-novo',
   templateUrl: './modulo-novo.component.html',
@@ -8,14 +10,18 @@ import { Component, OnInit } from '@angular/core';
 export class ModuloNovoComponent implements OnInit {
 
   nomePortal: string;
-  cursos: string[]=['Cadeira','Vasssoura','Arroz'];
+  cursos: string[];
 
-  constructor(){
+  constructor(private servico: ServicoNovoService){
     this.nomePortal='objetos:';
 
-    for(let i=0; i<this.cursos.length; ++i){
+    this.cursos=this.servico.getCursos();
+
+    /*for(let i=0; i<this.cursos.length; ++i){
       let curso = this.cursos[i];
-    }
+    }*/
+   //var servico = new ServicoNovoService
+   
   }
   ngOnInit(): void {
     
