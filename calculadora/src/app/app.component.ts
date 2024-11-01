@@ -13,12 +13,20 @@ export class AppComponent {
   valorDigitado: string = "0";
 
   botaoClicado(value: string): void {
-    if (this.contador == 0){
+    if (this.valorDigitado=="0" && value=="0"){
+      this.valorDigitado=value;
+      this.contador=0;
+    }
+    else if (this.contador == 0){
       this.valorDigitado=value;
       this.contador=1;
     }
     else{
       this.valorDigitado += value; 
     }
+  }
+  BotaoC():void{
+    this.valorDigitado="0";
+    this.contador=0;
   }
 }
