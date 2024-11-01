@@ -3,26 +3,25 @@
       <div class="card" style="width: 40rem; height: 35rem; background-color: #9ab2d6;">
           <div class="card-body">
               <p class="fs-1" style="color: #ffffff;">Calculadora</p>
-            <div class="alert alert-light" role="alert">
-              Digite um numero
+            <div class="alert alert-light" role="alert" style="font-size: 2rem;">
+              {{ valorDigitado }}
             </div>
-            <app-botoes-calculadora value="1"></app-botoes-calculadora>
-            <app-botoes-calculadora value="2"></app-botoes-calculadora>
-            <app-botoes-calculadora value="3"></app-botoes-calculadora>
-            <app-botoes-calculadora value="÷"></app-botoes-calculadora>
-            <app-botoes-calculadora value="4"></app-botoes-calculadora>
-            <app-botoes-calculadora value="5"></app-botoes-calculadora>
-            <app-botoes-calculadora value="6"></app-botoes-calculadora>
-            <app-botoes-calculadora value="x"></app-botoes-calculadora>
-            <app-botoes-calculadora value="7"></app-botoes-calculadora>
-            <app-botoes-calculadora value="8"></app-botoes-calculadora>
-            <app-botoes-calculadora value="9"></app-botoes-calculadora>
-            <app-botoes-calculadora value="+"></app-botoes-calculadora>
-            <app-botoes-calculadora value="."></app-botoes-calculadora>
-            <app-botoes-calculadora value="0"></app-botoes-calculadora>
-            <app-botoes-calculadora value="="></app-botoes-calculadora>
-            <app-botoes-calculadora value="-"></app-botoes-calculadora>
-            
+            <app-botoes-calculadora value="1" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="2" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="3" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="÷" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="4" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="5" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="6" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="x" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="7" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="8" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="9" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="+" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="." (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="0" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="=" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="-" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>   
           </div>
         </div>
   </article>
