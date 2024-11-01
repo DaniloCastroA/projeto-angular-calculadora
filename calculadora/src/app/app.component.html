@@ -8,9 +8,17 @@
               {{ valorDigitado }}
             </div>
             <div class="pro" style="margin-top: -98px; margin-left: 457px;">
-              <button type="button" class="btn btn-light btn-calculadora" 
-              style="width: 8rem; height: 5rem; font-weight: bold ;font-size: 35px;"
-              (click)="BotaoC()">c</button>
+
+              <button type="button" 
+              class="btn btn-light btn-calculadora" 
+              style="width: 8rem; 
+              height: 5rem; 
+              font-weight: bold 
+              ;font-size: 35px;"
+              (click)="botaoC()">
+              c
+              </button>
+
             </div>
             <div class="div"style="margin-top: 15px; margin-left: 450px;"></div>
             <app-botoes-calculadora value="1" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
