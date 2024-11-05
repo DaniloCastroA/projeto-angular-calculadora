@@ -25,7 +25,7 @@ export class AppComponent {
       this.valorDigitado += value; 
     }
   }
-  BotaoC():void{
+  botaoC():void{
     this.valorDigitado="0";
     this.contador=0;
   }
