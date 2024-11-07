@@ -1,7 +1,7 @@
 .btn-calculadora {
-    width: 8rem;
+    width: 90%;
     margin: 0.65rem;
-    height: 4rem;
+    height: auto;
     font-weight: bold;
-    font-size: 35px;
+    font-size: calc(1rem + 1.5vw);
   }

@@ -1,4 +1,6 @@
 .btn-visor {
-    font-size: 2rem;
-    width: 435px;
+  font-size: calc(1rem + 1.5vw);
+  margin: 0.35rem;
+  width: 95%;
+  height: 80%;
   }
