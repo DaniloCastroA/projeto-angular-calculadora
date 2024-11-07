@@ -11,27 +11,23 @@
 .Visor-C {
     display: grid;
     grid-template-columns: 73.5% 26.5%;
-    width: 100%; 
-}
-
-.Visor-C > div:first-child { /* Seleciona o primeiro elemento da Visor-C */
-    width: 100%; 
+    width: 100%;
 }
 .calculadora-divisor{
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: grid;
     grid-template-columns: 74% 25%;
 }
 .calculadora-numeros{
     width: 100%;
-    height: 20%;
+    height: 70%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
 .calculadora-operadores{
     width: 100%;
-    height: 50%;
+    height: 70%;
     display: grid;
     grid-template-columns: 100%;
 }
