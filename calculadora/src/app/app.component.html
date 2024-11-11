@@ -3,7 +3,7 @@
           <div class="calculadora-title">Calculadora</div>
           <div class="Visor-C">
             <app-visor-calculadora [content]="valorDigitado"></app-visor-calculadora>
-            <app-botoes-calculadora value="c" (clickEvent)="botaoC()"></app-botoes-calculadora>
+            <app-botoes-calculadora value="C" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
           </div>
           <div class="calculadora-divisor">
             <div class="calculadora-numeros">
@@ -21,8 +21,8 @@
               <app-botoes-calculadora value="=" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
             </div>
             <div class="calculadora-operadores">
-              <app-botoes-calculadora value="÷" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
-              <app-botoes-calculadora value="x" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+              <app-botoes-calculadora value="/" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+              <app-botoes-calculadora value="*" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
               <app-botoes-calculadora value="+" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
               <app-botoes-calculadora value="-" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora> 
             </div>

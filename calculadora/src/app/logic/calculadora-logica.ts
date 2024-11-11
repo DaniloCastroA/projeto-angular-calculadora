@@ -1,14 +1,16 @@
+import { ProcessadorSimples } from "./processador-simples";
 
 
-class CalculadoraLogica {
+export class CalculadoraLogica {
 
-  private static visor: string = "0";
+  private static processador: ProcessadorSimples = new ProcessadorSimples();
 
   public static pegaConteudoVisor(): string {
-    return CalculadoraLogica.visor;
+    return this.processador.display()
   }
 
   public static entraTecla(key: string) {
+    this.processador.pressKey(key);
 
   }
 
