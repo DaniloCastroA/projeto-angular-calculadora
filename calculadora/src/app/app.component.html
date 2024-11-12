@@ -3,11 +3,11 @@
         <div class="calculadora-title">Calculadora</div>
         <div class="Visor-C">
           <app-visor-calculadora [content]="valorVisor"></app-visor-calculadora>
-          <app-botoes-calculadora typeButton="c" value="c" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+          <app-botoes-calculadora typeButton="c" value="C" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
         </div>
         <div class="calculadora-divisor">
           <div class="calculadora-numeros">
-            <app-botoes-calculadora  value="1" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora value="1" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
             <app-botoes-calculadora value="2" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
             <app-botoes-calculadora value="3" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
             <app-botoes-calculadora value="4" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
@@ -21,8 +21,8 @@
             <app-botoes-calculadora value="=" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
           </div>
           <div class="calculadora-operadores">
-            <app-botoes-calculadora typeButton="operador" value="÷" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
-            <app-botoes-calculadora typeButton="operador" value="x" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora typeButton="operador" value="/" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
+            <app-botoes-calculadora typeButton="operador" value="*" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
             <app-botoes-calculadora typeButton="operador" value="+" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora>
             <app-botoes-calculadora typeButton="operador" value="-" (clickEvent)="botaoClicado($event)"></app-botoes-calculadora> 
           </div>

@@ -9,12 +9,10 @@ import { CalculadoraLogica } from './logic/calculadora-logica';
 export class AppComponent {
   title = 'calculadora';
 
-  contador: number = 0;
-
   valorVisor: string = "0";
 
   botaoClicado(value: string): void {
     CalculadoraLogica.entraTecla(value);
-    this.valorVisor=CalculadoraLogica.pegaConteudoVisor();
+    this.valorVisor = CalculadoraLogica.pegaConteudoVisor();
   }
 }
