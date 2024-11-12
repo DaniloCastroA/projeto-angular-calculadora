@@ -36,9 +36,3 @@
     display: grid;
     grid-template-columns: 100%;
 }
-.botao-operacoes{
-    background-color:yellow
-}
-.botao-c{
-    background-color:red
-}

@@ -9,7 +9,9 @@ export class CalculadoraLogica {
 
   public static entraTecla(key: string) {
     if(this.contador==0){
-      CalculadoraLogica.visor=key;
+      if(key>"0" && key<"9"){
+        CalculadoraLogica.visor=key;
+      }
       this.contador++;
     }
     else if(key=="c"){

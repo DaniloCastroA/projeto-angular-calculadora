@@ -1,6 +1,15 @@
-.btn-calculadora {
+:host{
+  .btn-calculadora {
     width: 90%;
     height: 85%;
     font-weight: bold;
     font-size: 1rem;
+    background-color: white;
   }
+  .btn-calculadora[typeButton="operador"]{
+    background-color: yellow;
+  }
+  .btn-calculadora[typeButton="c"]{
+    background-color: red;
+  }
+}
