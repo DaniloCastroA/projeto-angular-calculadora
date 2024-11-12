@@ -1,15 +1,34 @@
 :host{
   .btn-calculadora {
+
+    display: inline-block;   /* Torna o span comportar-se como um bloco para poder aplicar largura e altura */
+    padding: 10px 20px;      /* Adiciona preenchimento interno */
+    text-align: center;      /* Centraliza o texto */
+    border-radius: 5px;      /* Bordas arredondadas */
+    cursor: pointer;        /* Altera o cursor para indicar que é interativo */
+    transition: background-color 0.3s ease; /* Transição suave para efeitos */
     width: 90%;
     height: 85%;
     font-weight: bold;
     font-size: 1rem;
-    background-color: white;
+
   }
   .btn-calculadora[typeButton="operador"]{
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
+  }
+  .btn-calculadora[typeButton="operador"]:hover{
+    background-color: rgba(255, 255, 0, 0.595);
   }
   .btn-calculadora[typeButton="c"]{
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+  }
+  .btn-calculadora[typeButton="c"]:hover{
+    background-color: rgb(255, 0, 0,0.595);
+  }
+  .btn-calculadora[typeButton="padrao"]{
+    background-color: rgb(255, 255, 255);
+  }
+  .btn-calculadora[typeButton="padrao"]:hover{
+    background-color: rgb(255, 255, 255,0.595);
   }
 }

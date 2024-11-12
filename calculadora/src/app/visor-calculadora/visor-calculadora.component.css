@@ -1,6 +1,10 @@
 .btn-visor {
-  font-size: calc(1rem + 1.5vw);
+  font-size: 2rem;
   padding: 10px;
   width: 96%;
   height: 85%;
+  display: inline-block;
+  text-align: left;
+  background-color: white;
+  border-radius: 5px;      /* Bordas arredondadas */
   }

@@ -1,12 +1,15 @@
 .centralizar-calculadora {
+  margin-top: 10%;
   display: flex;
   justify-content: center;
+  
 }
 .calculadora-top {
-    padding: 10px;
     width: 50%;
     height: 100%;
     background-color: #9ab2d6;
+    text-align: center;  /* Centraliza os botões horizontalmente */
+    border-radius: 5px;      /* Bordas arredondadas */
 }
 
 .calculadora-title{
