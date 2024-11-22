@@ -20,9 +20,8 @@ export class ProcessadorSimplesDiferente {
         }
         else{
           this.displayValue = this.previousValue + this.currentValue;
-        }
-        
         return;
+        }
       }
   
       // Se for um operador (+, -, *, /), armazenar o operador e o valor atual
