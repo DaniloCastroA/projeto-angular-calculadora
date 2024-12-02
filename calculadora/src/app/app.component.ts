@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalculadoraLogica } from './logic/calculadora-logica';
+import { CalculadoraLogica } from './log.service';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +11,13 @@ export class AppComponent {
 
   valorVisor: string = "0";
 
-  botaoClicado(value: string): void {
-    CalculadoraLogica.entraTecla(value);
-    this.valorVisor = CalculadoraLogica.pegaConteudoVisor();
+  constructor(private calculadoraLogica: CalculadoraLogica) { }
+  ngOnInit() {
+    
   }
+  botaoClicado(value: string): void {
+    this.calculadoraLogica.entraTecla(value);
+    this.valorVisor=this.calculadoraLogica.pegaConteudoVisor();
+  }
+ 
 }
