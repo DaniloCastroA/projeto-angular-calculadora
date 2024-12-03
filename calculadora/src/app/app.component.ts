@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CalculadoraLogica } from './log.service';
+import { CalculadoraLogica } from './services/logica/log.service'; 
 
 @Component({
   selector: 'app-root',

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ProcessadorSimplesDiferente } from './logic/processador-simples-diferente';
+import { ProcessadorSimplesDiferente } from '../../logic/processador-simples-diferente'; 
 
 @Injectable({
   providedIn: 'root'
